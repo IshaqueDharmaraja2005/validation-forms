@@ -1,0 +1,155 @@
+/* Basic Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Background Video Styling */
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1;
+  filter: brightness(60%);
+}
+
+/* Container Styling */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6); /* Transparent dark background for better text visibility */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: auto; /* Allow scrolling if needed */
+}
+
+/* Form Container Styling */
+.form-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  margin: 0 auto; /* Ensure the form container is centered */
+  box-sizing: border-box; /* Ensure padding does not affect the width */
+}
+
+/* Heading Styling */
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input and Select Styling */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Button Styling */
+.btn, button[type="submit"] {
+  display: inline-block;
+  background: linear-gradient(45deg, #4caf50, #45a049);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+}
+
+/* Button Hover Effect */
+.btn:hover, button[type="submit"]:hover {
+  background: linear-gradient(45deg, #45a049, #4caf50);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Back Button Styling */
+button.btn {
+  display: inline-block;
+  background: linear-gradient(45deg, #ff5722, #e64a19);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+}
+
+/* Back Button Hover Effect */
+button.btn:hover {
+  background: linear-gradient(45deg, #e64a19, #ff5722);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Label Styling */
+label {
+  text-align: left;
+  display: block;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+/* Radio Button Styling */
+input[type="radio"] {
+  margin: 0 5px;
+}
+
+/* Form Input Focus Effect */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+select:focus {
+  border-color: #45a049;
+  outline: none;
+  box-shadow: 0 0 5px rgba(69, 160, 73, 0.5);
+}
+
+/* File Input Styling */
+input[type="file"] {
+  margin: 10px 0;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 600px) {
+  .form-container {
+      width: 90%;
+      padding: 20px;
+  }
+
+  h1 {
+      font-size: 1.5em;
+  }
+}
